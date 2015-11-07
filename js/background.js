@@ -1,43 +1,24 @@
 console.log("Evil Censor");
 var REDIR_RULES = {
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'slobodnyvysielac.sk': 'http://moralizer.github.io/ruska_propaganda.html',
 
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'svetkolemnas.info': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'zvedavec.org': 'http://moralizer.github.io/ruska_propaganda.html',
+  //
+  // Ruska propaganda
+  //
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
   'ac24.cz': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'rodinajezaklad.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+  'aeronet.cz': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'osud.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+  'afinabul.blog.cz': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'czech.ruvr.ru': 'http://moralizer.github.io/ruska_propaganda.html',
+  'alternews.cz': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'slovak.ruvr.ru': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'zemavek.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'panobcan.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'czechfreepress.cz': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'vaseforum.sk/blog': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'hlavnespravy.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+  'auria.sk': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
   'badatel.net': 'http://moralizer.github.io/ruska_propaganda.html',
@@ -46,94 +27,119 @@ var REDIR_RULES = {
   'badatel.sk': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'protiprudu.org': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
   'beo.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'obcianskytribunal.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'sho.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'voxvictims.com': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'parlamentnilisty.cz': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'parlamentnelisty.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'magnificat.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'freepub.cz': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'vkpatriarhat.org.ua': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'spolocnostsbm.com': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'svobodnenoviny.eu': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'auria.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'afinabul.blog.cz': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'dolezite.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'inespravy.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'nadhlad.com': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'ze-sveta.cz': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'nwoo.org': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'orgo-net.blogspot.sk': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'cez-okno.net': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'vlastnihlavou.cz': 'http://moralizer.github.io/ruska_propaganda.html',
-
-  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'neskutocne.sk': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
   'bezpolitickekorektnosti.cz': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'cez-okno.net': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'czech.ruvr.ru': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'czechfreepress.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'dolezite.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
   'eiaktivity.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'freepub.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'hlavnespravy.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'inespravy.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'magnificat.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'nadhlad.com': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
   'nazorobcana.sk': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'alternews.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+  'neskutocne.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'nwoo.org': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'obcianskytribunal.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'orgo-net.blogspot.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'osud.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'panobcan.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'parlamentnelisty.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'parlamentnilisty.cz': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
   'pravdive.eu': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
-  'aeronet.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+  'protiprudu.org': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'rodinajezaklad.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'sho.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'slobodnyvysielac.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'slovak.ruvr.ru': 'http://moralizer.github.io/ruska_propaganda.html',
 
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
   'slovenskeslovo.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'spolocnostsbm.com': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'svetkolemnas.info': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'svobodnenoviny.eu': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'vaseforum.sk/blog': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'vkpatriarhat.org.ua': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'vlastnihlavou.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'voxvictims.com': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'ze-sveta.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'zemavek.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
+  'zvedavec.org': 'http://moralizer.github.io/ruska_propaganda.html',
+
 
 };
 
