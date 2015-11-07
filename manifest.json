@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Moralizer",
+  "description": "Za pravdivý internet a šťastnejší život.",
+  "version": "1.0",
+  "options_page": "options.html",
+  "permissions": [
+    "proxy",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*"
+  ],
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "browser_action": {
+    "default_icon": "img/block.png"
+  },
+  "icons": { "16": "img/sun16.png",
+             "48": "img/sun48.png",
+            "128": "img/sun128.png"
+  }
+}
