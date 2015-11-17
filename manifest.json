@@ -2,8 +2,9 @@
   "manifest_version": 2,
 
   "name": "Moralizer",
+  "short_name": "Moralizer",
   "description": "Za pravdivý internet a šťastnejší život.",
-  "version": "1.1",
+  "version": "1.2",
   "options_page": "options.html",
   "permissions": [
     "proxy",
