@@ -140,6 +140,35 @@ var REDIR_RULES = {
   // http://echo24.cz/a/isYwV/42-ceskych-a-slovenskych-webu-ktere-siri-ruske-lzi
   'zvedavec.org': 'http://moralizer.github.io/ruska_propaganda.html',
 
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'badatel.net': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'conspi.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'prvopodstata.com': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'stalo-se.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'nekorektni-tv.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'zemejas.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'freeglobe.parlamentnilisty.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'nemesis.sk': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'novarepublika.cz': 'http://moralizer.github.io/ruska_propaganda.html',
+
+  // https://www.konspiratori.sk/zoznam-stranok.php
+  'vlasteneckenoviny.cz': 'http://moralizer.github.io/ruska_propaganda.html',
 
 };
 
